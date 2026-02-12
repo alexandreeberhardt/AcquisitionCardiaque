@@ -56,7 +56,7 @@ class VisualiseurSignal(QtWidgets.QMainWindow):
         self.simple_last_peak_time = None
 
         # ---------------------------------------------------------------------
-        #État / sources
+        #État et sources
 
         self.channels = []
         self.current_channel = None
@@ -82,9 +82,9 @@ class VisualiseurSignal(QtWidgets.QMainWindow):
         self.recording_writer = None
 
         #Mode d'affichage
-        self.current_display_mode = "scroll"  # "scroll" | "simple"
+        self.current_display_mode = "scroll"  # scroll - simple
 
-        #Cache pics (calculés par des timer séparé)
+        #Cache pics calculés par des timer séparé
         self._pics_x = np.array([], dtype=float)
         self._pics_y = np.array([], dtype=float)
 
@@ -103,7 +103,7 @@ class VisualiseurSignal(QtWidgets.QMainWindow):
 
         self._recalculer_hold_steps()
 
-        #Init canaux si possible
+        #Init canaux
         self.reset_interface()
 
     # ---------------------------------------------------------------------
@@ -635,8 +635,8 @@ class VisualiseurSignal(QtWidgets.QMainWindow):
     def purge_old_data(self):
         pass
 
-    # ---------------------------------------------------------------------
-    # Enregistrement
+    #---------------------------------------------------------------------
+    #Enregistrement
 
     def toggle_recording(self, checked):
         if checked:
@@ -686,7 +686,7 @@ class VisualiseurSignal(QtWidgets.QMainWindow):
         self.btn_record.setText("Enregistrer")
         self.btn_record.setChecked(False)
 
-    # ---------------------------------------------------------------------
+    #---------------------------------------------------------------------
     #Mesures et stats
 
     def actualiser_mesure(self):
@@ -865,3 +865,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
