@@ -64,17 +64,20 @@ Deux modes sont disponibles :
 ```
 ## Installation 
 
+```bash
 git clone https://github.com/yass2212/AcquisitionCardiaque.git
 cd AcquisitionCardiaque
+```
 
 ### Dépendence 
-
+```bash
 pip install -r requirements.txt
+```
 
 ### Lancement 
-
+```bash
 python main.py
-
+```
 ## Utilisation
 
 ### Acquisition en direct 
