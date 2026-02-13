@@ -60,7 +60,6 @@ Deux modes sont disponibles :
 ├── data/
 │   └── fichier_test.txt
 ├── requirements.txt
-├── LICENSE
 └── README.md
 ```
 ## Installation 
