@@ -59,7 +59,6 @@ Deux modes sont disponibles :
 ├── ecg_detectors_modified.py
 ├── data/
 │   └── fichier_test.txt
-├── screenshots/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
